@@ -1,6 +1,6 @@
 let stars = [];
 let sound;
-let isOnColor = '🔇';
+let isOn = '🔇';
 let speedSlider;
 
 function preload() {
@@ -58,8 +58,8 @@ function draw() {
 
   // for audo
   push();
-  fill(isOnColor);
-  text(isOnColor, width / 2 - 40, height / 2 - 20);
+  fill(isOn);
+  text(isOn, width / 2 - 40, height / 2 - 20);
   // rect(width / 2 - 40, height / 2 - 40, 40, 40);
   pop();
 
@@ -104,10 +104,10 @@ function mousePressed() {
   ) {
     if (sound.isPlaying()) {
       sound.stop();
-      isOnColor = '🔇';
+      isOn = '🔇';
     } else {
       sound.play();
-      isOnColor = '🔊';
+      isOn = '🔊';
     }
   }
 }
