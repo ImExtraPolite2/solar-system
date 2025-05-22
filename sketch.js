@@ -13,7 +13,7 @@ function setup() {
 
   // Create speed control slider
   speedSlider = createSlider(0.05, 0.1, 0.05, 0.01);
-  speedSlider.position(width / 2 + 50, height + 50);
+  speedSlider.position(width / 2 + 50, height + 50, 'fixed');
   speedSlider.size(200);
 
   // push star object into array
