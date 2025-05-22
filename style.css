@@ -3,7 +3,34 @@ body {
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: #1e2021;
+  color: white;
+}
+
 canvas {
   margin: auto;
   display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+.key {
+  position: absolute;
+  top: 7vh;
+  right: 20vw;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gray {
+  background-color: gray;
 }
