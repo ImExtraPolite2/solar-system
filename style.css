@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url(fonts/Orbitron-Regular.ttf);
+}
+
 html,
 body {
   margin: 0;
@@ -7,6 +12,7 @@ body {
 body {
   background-color: #1e2021;
   color: white;
+  font-family: 'Orbitron', Helvetica, Arial, sans-serif;
 }
 
 canvas {
@@ -20,17 +26,14 @@ h1 {
 
 .key {
   position: absolute;
-  top: 7vh;
-  right: 20vw;
-}
-
-ul {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  top: 20vh;
+  right: 10vw;
 }
 
-.gray {
-  background-color: gray;
+.key > div {
+  text-align: center;
+  padding: 5px;
+  color: black;
 }
